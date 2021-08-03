@@ -6,9 +6,9 @@ Configurando o backend
 2.  Abrir a guia Package Manager Console
 3.  Selecionar o projeto ATSBackend.Infra.Data execute os comandos
   
-  3.1.  Add-Migration Initial
+      3.1.  Add-Migration Initial
   
-  3.2.  Update-Database -Verbose
+      3.2.  Update-Database -Verbose
 
 4.  Após a criação da base de dados via migrations execute o projeto para habilitar a API site https://localhost:5001/swagger/index.html
 
