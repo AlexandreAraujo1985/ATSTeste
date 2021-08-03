@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+table th{
+    color: black;
+    font-size: 15px;
+}
+
+.icone{
+    color: #6b48ff;
+}

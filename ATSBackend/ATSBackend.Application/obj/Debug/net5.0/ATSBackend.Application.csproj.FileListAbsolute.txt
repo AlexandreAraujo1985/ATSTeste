@@ -1,0 +1,15 @@
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\bin\Debug\net5.0\ATSBackend.Application.deps.json
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\bin\Debug\net5.0\ATSBackend.Application.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\bin\Debug\net5.0\ref\ATSBackend.Application.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\bin\Debug\net5.0\ATSBackend.Application.pdb
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\bin\Debug\net5.0\ATSBackend.Domain.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\bin\Debug\net5.0\ATSBackend.Domain.pdb
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.csproj.CopyComplete
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ref\ATSBackend.Application.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Application\obj\Debug\net5.0\ATSBackend.Application.pdb

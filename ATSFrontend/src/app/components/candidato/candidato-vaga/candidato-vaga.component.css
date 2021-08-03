@@ -1,0 +1,17 @@
+label{
+    padding-right: 20px;
+    color: rgb(88, 88, 88);
+}
+
+label span{
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+table th{
+    color: black;
+    font-size: 15px;
+}

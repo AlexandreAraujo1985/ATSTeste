@@ -1,0 +1,12 @@
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\bin\Debug\net5.0\ATSBackend.Domain.deps.json
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\bin\Debug\net5.0\ATSBackend.Domain.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\bin\Debug\net5.0\ref\ATSBackend.Domain.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\bin\Debug\net5.0\ATSBackend.Domain.pdb
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ref\ATSBackend.Domain.dll
+C:\Users\alexa\OneDrive\Documents\DesafioATS\src\ATSBackend\ATSBackend.Domain\obj\Debug\net5.0\ATSBackend.Domain.pdb

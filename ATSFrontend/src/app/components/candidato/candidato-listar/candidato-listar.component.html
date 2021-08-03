@@ -1,0 +1,47 @@
+<div class="mat-elevation-z4">
+    <table mat-table [dataSource]="candidatos">
+        <ng-container matColumnDef="idCandidato">
+            <th mat-header-cell *matHeaderCellDef>Id</th>
+            <td mat-cell *matCellDef="let row">{{row.idCandidato}}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef>Nome</th>
+            <td mat-cell *matCellDef="let row">{{row.nome}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dataNascimento">
+            <th mat-header-cell *matHeaderCellDef>Data Nascimento</th>
+            <td mat-cell *matCellDef="let row">{{row.dataNascimento | date: 'dd/MM/yyyy'}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="profissao">
+            <th mat-header-cell *matHeaderCellDef>Profissão</th>
+            <td mat-cell *matCellDef="let row">{{row.profissao}}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="acao">
+            <th mat-header-cell *matHeaderCellDef>Ações</th>
+            <td mat-cell *matCellDef="let row">
+                <a routerLink="/candidatos/cadidato-vaga/{{ row.idCandidato }}" title="Cadastrar-se" class="icone">
+                    <i class="material-icons">
+                        work_outline
+                    </i>
+                </a>
+                <a routerLink="/candidatos/alterar/{{ row.idCandidato }}" title="Editar" class="icone">
+                    <i class="material-icons">
+                        edit
+                    </i>
+                </a>
+                <a routerLink="/candidatos/excluir/{{ row.idCandidato }}" title="Excluir" class="icone">
+                    <i class="material-icons">
+                        delete
+                    </i>
+                </a>
+            </td>
+          </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

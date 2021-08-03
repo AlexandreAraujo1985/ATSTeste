@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia button{
+    box-shadow: none;
+}
+
+.mat-form-field-infix {
+    max-width: 100%;
+    padding-right: 15px;
+}
+
+button {
+    margin: 20px 15px 0px 0px;
+}

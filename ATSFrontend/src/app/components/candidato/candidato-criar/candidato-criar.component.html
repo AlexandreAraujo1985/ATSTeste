@@ -1,0 +1,68 @@
+<mat-card class="mat-elevation-z4">
+    <mat-card-title>Novo Candidato</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="candidato.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Profissão" [(ngModel)]="candidato.profissao"
+                name="profissao">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="date" matInput placeholder="Data de Nascimento" [(ngModel)]="candidato.dataNascimento"
+                name="dataNascimento">
+        </mat-form-field>
+    </form>
+</mat-card>
+<br />
+<mat-card class="mat-elevation-z4">
+    <mat-card-title>Cadastrar Currículo</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Formação Acadêmica" [(ngModel)]="candidato.curriculo.formacaoAcademica"
+                name="formacaoAcademica">
+        </mat-form-field>
+        <mat-card class="experiencia">
+            <mat-card-title>Experiências</mat-card-title>
+            <div *ngFor="let experiencia of candidato.curriculo.experiencias; let i = index;">
+                <mat-form-field class="nome_empresa">
+                    <input matInput placeholder="Nome Empresa {{i + 1}}" name="'nomeEmpresa_'{{i + 1}}"
+                        [(ngModel)]="experiencia.nomeEmpresa">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="date" matInput placeholder="Data Início {{i + 1}}" name="'dataInicio'{{i + 1}}"
+                        [(ngModel)]="experiencia.dataInicio">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="date" matInput placeholder="Data Fim {{i + 1}}" name="'dataFim'{{i + 1}}"
+                        [(ngModel)]="experiencia.dataFim">
+                </mat-form-field>
+               
+                <button mat-raised-button (click)="removerExperiencia(i)">
+                    <i class="material-icons">
+                        delete
+                    </i>
+                </button>
+            </div>
+            <button mat-raised-button (click)="adicionarExperiencia()">
+                <i class="material-icons">
+                    add_circle_outline
+                </i>
+            </button>
+            <!-- <mat-form-field>
+                <input type="date" matInput placeholder="Data de Nascimento" [(ngModel)]="candidato.dataNascimento"
+                    name="nome">
+            </mat-form-field> -->
+        </mat-card>
+    </form>
+</mat-card>
+<br />
+<div class="">
+    <button mat-raised-button (click)="criarCandidato()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</div>

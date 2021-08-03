@@ -1,0 +1,27 @@
+<mat-card class="mat-elevation-z4">
+    <mat-card-title>Alterar Vaga</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" [(ngModel)]="vaga.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Profissão" [(ngModel)]="vaga.profissao" name="profissao">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="date" matInput placeholder="Data Criação" [(ngModel)]="vaga.dataCriacao" name="dataCriacao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Local" [(ngModel)]="vaga.local" name="local">
+        </mat-form-field>
+    </form>
+</mat-card>
+<br />
+<div class="">
+    <button mat-raised-button (click)="alterarVaga()" color="primary">
+        Alterar
+    </button>
+
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</div>
