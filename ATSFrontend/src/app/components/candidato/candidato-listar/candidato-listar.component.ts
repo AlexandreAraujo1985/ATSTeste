@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CandidatoListarComponent implements OnInit {
 
+  isLoading = true;
+
   candidatos!: Candidato[];
   displayedColumns = ['idCandidato', 'nome', 'dataNascimento', 'profissao', 'acao']
 
@@ -16,8 +18,9 @@ export class CandidatoListarComponent implements OnInit {
 
   ngOnInit(): void {
     this.candidatoService.listar().subscribe(candidatos => {
-      this.candidatos = candidatos
-    })
+      this.candidatos = candidatos;
+      this.isLoading = false;
+    }, error => this.isLoading = false);
   }
 
 }

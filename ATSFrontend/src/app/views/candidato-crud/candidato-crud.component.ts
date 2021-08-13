@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./candidato-crud.component.css']
 })
 export class CandidatoCrudComponent implements OnInit {
-
+  showSpinner = false;
   constructor(private router: Router) { }
 
   ngOnInit(): void {

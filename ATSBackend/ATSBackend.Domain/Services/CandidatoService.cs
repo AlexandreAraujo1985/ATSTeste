@@ -24,6 +24,9 @@ namespace ATSBackend.Domain.Services
             _candidatoRepository.Alterar(candidatoExclusao);
         }
 
+        public void ExcluirExperienciaCandidato(int idExperiencia) =>
+            _candidatoRepository.ExcluirExperienciaCandidato(idExperiencia);
+
         public IEnumerable<Candidato> ListarCandadatosAtivos() =>
             _candidatoRepository.ListarCandadatosAtivos();
 

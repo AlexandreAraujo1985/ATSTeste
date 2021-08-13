@@ -30,7 +30,6 @@ export class CandidatoCriarComponent implements OnInit {
   };
 
   constructor(private candidatoService: CandidatoService, private router: Router) { }
-
   ngOnInit(): void {
 
   }

@@ -19,6 +19,9 @@ namespace ATSBackend.Application.Services
         public void ExcluirCandidato(int idCandidato) =>
             _candidatoService.ExcluirCandidato(idCandidato);
 
+        public void ExcluirExperienciaCandidato(int idExperiencia) =>
+            _candidatoService.ExcluirExperienciaCandidato(idExperiencia);
+
         public IEnumerable<Candidato> ListarCandadatosAtivos() =>
             _candidatoService.ListarCandadatosAtivos();
 

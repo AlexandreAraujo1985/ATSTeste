@@ -38,28 +38,49 @@ export class CandidatoAlterarComponent implements OnInit {
       this.candidato = candidato;
       this.candidato.dataNascimento = this.candidato.dataNascimento.substring(0, 10)
       if (candidato.curriculo) {
-        if (candidato.curriculo.experiencias.length > 0) {
-          candidato.curriculo.experiencias.forEach(element => {
-            element.dataInicio = element.dataInicio.substring(0, 10)
-            element.dataFim = element.dataFim.substring(0, 10)
-          });
+        if (candidato.curriculo.experiencias) {
+          if (candidato.curriculo.experiencias.length > 0) {
+            candidato.curriculo.experiencias.forEach(element => {
+              element.dataInicio = element.dataInicio.substring(0, 10)
+              element.dataFim = element.dataFim.substring(0, 10)
+            });
+          }
         }
       }
     });
   }
 
-  removerExperiencia(index: any): void {
-    console.log(index);
-    this.candidato.curriculo.experiencias.splice(index, 1);
+  removerExperiencia(index: any, candidato: Candidato): void {
+    if (candidato.curriculo.experiencias[index].idExperiencia > 0) {
+      this.candidatoService.excluirExperienciaCadidato(candidato.curriculo.experiencias[index].idExperiencia)
+        .subscribe(() => {
+          this.candidatoService.showMessage('Experiência Removida!');
+          this.candidato.curriculo.experiencias.splice(index, 1);
+        });
+    } else {
+      this.candidato.curriculo.experiencias.splice(index, 1);
+    }
   }
 
   adicionarExperiencia(): void {
-    this.candidato.curriculo.experiencias.push({
-      idExperiencia: 0,
-      nomeEmpresa: '',
-      dataInicio: '',
-      dataFim: ''
-    });
+    if (this.candidato.curriculo.experiencias === null) {
+      this.candidato.curriculo.experiencias = []
+
+      this.candidato.curriculo.experiencias.push({
+        idExperiencia: 0,
+        nomeEmpresa: '',
+        dataInicio: '',
+        dataFim: ''
+      });
+
+    } else {
+      this.candidato.curriculo.experiencias.push({
+        idExperiencia: 0,
+        nomeEmpresa: '',
+        dataInicio: '',
+        dataFim: ''
+      });
+    }
   }
 
   alterarCandidato(): void {

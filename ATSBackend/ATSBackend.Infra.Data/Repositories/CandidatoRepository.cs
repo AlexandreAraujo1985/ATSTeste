@@ -26,6 +26,14 @@ namespace ATSBackend.Infra.Data.Repositories
             _db.SaveChanges();
         }
 
+        public void ExcluirExperienciaCandidato(int idExperiencia)
+        {
+            var experienciaCandidato = _db.Experiencias.Find(idExperiencia);
+            _db.Experiencias.Remove(experienciaCandidato);
+
+            _db.SaveChanges();
+        }
+
         public IEnumerable<Candidato> ListarCandadatosAtivos() =>
             _db.Candidatos.Where(x => x.Ativo).ToList();
 

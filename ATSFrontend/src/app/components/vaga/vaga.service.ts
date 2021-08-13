@@ -55,6 +55,6 @@ export class VagaService {
 
   errorHandler(e: any): Observable<any> {
     this.showMessage("Houve um erro", true);
-    return EMPTY;
+    return e;
   }
 }

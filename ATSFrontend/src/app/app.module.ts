@@ -40,6 +40,8 @@ import { VagaExcluirComponent } from './components/vaga/vaga-excluir/vaga-exclui
 import { CandidatoVagaComponent } from './components/candidato/candidato-vaga/candidato-vaga.component';
 import { VagaCandidatosComponent } from './components/vaga/vaga-candidatos/vaga-candidatos.component';
 
+import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +77,8 @@ import { VagaCandidatosComponent } from './components/vaga/vaga-candidatos/vaga-
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

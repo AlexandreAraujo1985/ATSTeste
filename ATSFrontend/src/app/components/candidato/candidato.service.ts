@@ -9,7 +9,6 @@ import { map, catchError } from "rxjs/operators";
   providedIn: 'root'
 })
 export class CandidatoService {
-
   baseUrl = "https://localhost:5001/api/candidato";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
@@ -41,6 +40,12 @@ export class CandidatoService {
         catchError((e) => this.errorHandler(e)));
   }
 
+  excluirExperienciaCadidato(idExperiencia: any): Observable<Candidato> {
+    return this.http.delete<Candidato>(`${this.baseUrl}/experiencia/${idExperiencia}`)
+      .pipe(map((obj) => obj),
+        catchError((e) => this.errorHandler(e)));
+  }
+
   detalhar(idCandidato: any): Observable<Candidato> {
     return this.http.get<Candidato>(`${this.baseUrl}/${idCandidato}`)
       .pipe(map((obj) => obj),
@@ -61,6 +66,7 @@ export class CandidatoService {
 
   errorHandler(e: any): Observable<any> {
     this.showMessage("Houve um erro", true);
-    return EMPTY;
+    // return EMPTY;
+    return e;
   }
 }

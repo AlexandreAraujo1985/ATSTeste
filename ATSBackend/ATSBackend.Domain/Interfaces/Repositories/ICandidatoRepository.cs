@@ -9,5 +9,6 @@ namespace ATSBackend.Domain.Interfaces.Repositories
         void AlterarCandidato(Candidato candidato);
         IEnumerable<Candidato> ListarCandadatosPorVaga(int idVaga);
         IEnumerable<Candidato> ListarCandadatosAtivos();
+        void ExcluirExperienciaCandidato(int idExperiencia);
     }
 }

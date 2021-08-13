@@ -84,5 +84,14 @@ namespace ATSBackend.Service.Controllers
 
             return Ok();
         }
+
+        [HttpDelete("experiencia/{idExperiencia}")]
+        [AllowAnonymous]
+        public IActionResult ExcluirExperienciaCandidato(int idExperiencia)
+        {
+            _candidatoApplication.ExcluirExperienciaCandidato(idExperiencia);
+
+            return Ok();
+        }
     }
 }

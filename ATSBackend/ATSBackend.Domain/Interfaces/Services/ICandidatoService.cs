@@ -10,5 +10,6 @@ namespace ATSBackend.Domain.Interfaces.Services
         IEnumerable<Candidato> ListarCandadatosPorVaga(int idVaga);
         IEnumerable<Candidato> ListarCandadatosAtivos();
         void ExcluirCandidato(int idCandidato);
+        void ExcluirExperienciaCandidato(int idExperiencia);
     }
 }

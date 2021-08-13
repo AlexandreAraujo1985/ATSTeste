@@ -11,11 +11,14 @@ export class VagaListarComponent implements OnInit {
   vagas!: Vaga[];
   displayedColumns = ['idVaga', 'descricao', 'profissao', 'dataCriacao', 'local', 'acao']
 
+  isLoading = true;
+
   constructor(private vagaService: VagaService) { }
 
   ngOnInit(): void {
     this.vagaService.listar().subscribe(vagas => {
-      this.vagas = vagas
-    })
+      this.vagas = vagas;
+      this.isLoading = false;
+    }, error => this.isLoading = false)
   }
 }
