@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ATSBackend.Domain.Entities
 {
+    //Modificador de acesso
     public class Curriculo
     {
         public int IdCurriculo { get; set; }
