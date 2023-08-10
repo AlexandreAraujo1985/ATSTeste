@@ -7,6 +7,7 @@ namespace ATSBackend.Application.Services
 {
     public class CandidatoApplication : ApplicationBase<Candidato>, ICandidatoApplication
     {
+        //Propriedade para injeção de dependencia
         private readonly ICandidatoService _candidatoService;
         public CandidatoApplication(ICandidatoService candidatoService) : base(candidatoService)
         {
